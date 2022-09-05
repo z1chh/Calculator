@@ -1,0 +1,214 @@
+/********************\
+*     Properties     *
+\********************/
+:root {
+    --grey-color: rgb(50, 50, 50);
+    --light-grey-color: rgb(175, 175, 175);
+    --white-color: rgb(222, 222, 222);
+    --orange-color: rgb(200, 150, 0);
+    --dark-orange-color: rgb(180, 135, 0);
+    --hover-white-color: rgb(206, 206, 206);
+    --hover-grey-color: rgb(153, 153, 153);
+	--lato: 'Lato', sans-serif;
+	--roberto: 'Roberto Condensed', sans-serif;
+}
+
+
+/********************\
+*        Tags        *
+\********************/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--orange-color);
+    font-family: var(--roberto);
+}
+
+.subtitle {
+    color: var(--white-color);
+    font-family: var(--lato);
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 0.5em 0;
+}
+
+
+/********************\
+*   Navigation Bar   *
+\********************/
+#navbar {
+    padding: 1.2em;
+    background: var(--grey-color);
+}
+
+.navbar-list {
+    color: var(--white-color);
+    font-family: var(--roberto);
+    text-align: center;
+}
+
+.navbar-item {
+    color: var(--white-color);
+    display: block;
+    list-style: none;
+}
+
+.navbar-link {
+    color: var(--white-color);
+    text-decoration: none;
+    margin-right: 1.8em;
+    transition: color 300ms;
+}
+
+.navbar-link:hover {
+    color: var(--orange-color);
+}
+
+
+/********************\
+*        Main        *
+\********************/
+#main-title {
+    color: var(--white-color);
+    font-family: var(--lato);
+    font-size: 5em;
+    text-align: center;
+    margin: 0.2em 0 0 0;
+}
+
+.calc-container {
+    display: grid;
+    grid-template-rows: 1em 1em 1em 1em 1em;
+    grid-template-columns: 1em 1em 1em 1em;
+    gap: 0.2em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    font-size: 5em;
+    color: var(--white-color);
+}
+
+#answer-panel {
+    font-size: 0.5em;
+    margin: 5px 0;
+    padding: 0.5em 4em;
+    height: 1em;
+    color: var(--grey-color);
+    border-radius: 0.2em;
+    border: 2px solid var(--light-grey-color);
+    background-color: var(--white-color);
+    grid-area: 1/1/1/5;
+}
+
+.calc-btn {
+    font-size: 0.5em;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0.2em;
+    border: 2px solid var(--light-grey-color);
+    background-color: var(--white-color);
+    transition: border 300ms;
+    transition: background-color 300ms;
+}
+
+.calc-btn:hover {
+    border: 2px solid var(--hover-grey-color);
+    background-color: var(--hover-white-color);
+}
+
+#grid-item-7 {
+    grid-area: 3/1;
+}
+
+#grid-item-8 {
+    grid-area: 3/2;
+}
+
+#grid-item-9 {
+    grid-area: 3/3;
+}
+
+#grid-item-4 {
+    grid-area: 4/1;
+}
+
+#grid-item-5 {
+    grid-area: 4/2;
+}
+
+#grid-item-6 {
+    grid-area: 4/3;
+}
+
+#grid-item-1 {
+    grid-area: 5/1;
+}
+
+#grid-item-2 {
+    grid-area: 5/2;
+}
+
+#grid-item-3 {
+    grid-area: 5/3;
+}
+
+#grid-item-0 {
+    grid-area: 6/1/6/2;
+}
+
+#grid-item-10 {
+    grid-area: 6/3;
+}
+
+#grid-item-11 {
+    grid-area: 2/4;
+}
+
+#grid-item-12 {
+    grid-area: 3/4;
+}
+
+#grid-item-13 {
+    grid-area: 4/4;
+}
+
+#grid-item-14 {
+    grid-area: 5/4;
+}
+
+#grid-item-16 {
+    grid-area: 6/4;
+}
+
+#grid-item-15 {
+    grid-area: 2/1;
+}
+
+#grid-item-17 {
+    grid-area: 2/2;
+}
+
+#grid-item-18 {
+    grid-area: 2/3;
+}
+
+#grid-item-aswn {
+    grid-area: 1/1/1/5;
+}
+
+
+/********************\
+*       Footer       *
+\********************/
+#main-footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 2em 0;
+    background: var(--grey-color);
+    color: var(--white-color);
+    font-size: 1.2em;
+    font-family: var(--roberto);
+}
